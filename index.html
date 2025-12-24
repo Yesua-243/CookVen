@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cook.ven | Powered by PerfectVerso</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="glass-nav">
+        <div class="logo">
+            <div class="icon-box">cv</div>
+            <span>cook<span>.ven</span></span>
+        </div>
+        <div class="nav-right">
+            <span class="company-tag">PerfectVerso 7</span>
+            <a href="https://www.mediafire.com/file/xmzx0c123mcnzkc/app3041465-npj5m6+(1).apk/file" target="_blank" class="btn-nav">Descargar APK</a>
+        </div>
+    </nav>
+
+    <header class="main-hero">
+        <div class="hero-text">
+            <span class="top-badge">Propiedad de PerfectVerso</span>
+            <h1 class="reveal">La cocina del <br><span>futuro</span> es hoy.</h1>
+            <p class="reveal-slow">Optimiza tus recetas con la tecnología de cook.ven. Una interfaz fluida diseñada para los amantes del arte culinario moderno.</p>
+            
+            <div class="cta-container">
+                <a href="https://www.mediafire.com/file/xmzx0c123mcnzkc/app3041465-npj5m6+(1).apk/file" target="_blank" class="btn-download-big">
+                    <span class="icon-dl">📥</span>
+                    <div class="btn-text">
+                        <small>Instalación Segura</small>
+                        <span>Descargar APK (Mediafire)</span>
+                    </div>
+                </a>
+                <div class="play-store-soon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Próximamente en Play Store">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="ui-card card-1">
+                <div class="card-header">Receta Destacada</div>
+                <div class="card-body">Gourmet Tech v1.0</div>
+            </div>
+            <div class="ui-card card-2">
+                <div class="card-header">PerfectVerso UI</div>
+                <div class="card-status">Sincronizado</div>
+            </div>
+            <div class="glow-sphere"></div>
+        </div>
+    </header>
+
+    <section id="features" class="features-grid">
+        <div class="f-card">
+            <div class="f-icon">⚡</div>
+            <h3>Rendimiento Verso</h3>
+            <p>Arquitectura de código optimizada por PerfectVerso para una respuesta instantánea.</p>
+        </div>
+        <div class="f-card">
+            <div class="f-icon">🛡️</div>
+            <h3>Seguridad</h3>
+            <p>Descarga directa y segura. Protegemos tu privacidad en cada paso.</p>
+        </div>
+        <div class="f-card">
+            <div class="f-icon">🎨</div>
+            <h3>Interfaz Pro</h3>
+            <p>Un diseño minimalista que pone el foco en lo que importa: tu cocina.</p>
+        </div>
+    </section>
+
+    <footer class="minimal-footer">
+        <div class="footer-content">
+            <p>© 2025 **cook.ven** es un producto oficial de **PerfectVerso**.</p>
+            <div class="footer-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Soporte</a>
+            </div>
+        </div>
+    </footer>
+    <style>
+      :root {
+    --bg: #050505;
+    --accent: #00f2ff;
+    --surface: #111111;
+    --text: #ffffff;
+    --text-dim: #a1a1a1;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.glass-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    z-index: 1000;
+}
+
+.icon-box {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+.logo { display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; }
+.logo span span { color: var(--accent); }
+
+.company-tag { font-size: 0.8rem; color: var(--text-dim); margin-right: 20px; }
+
+/* Hero Section */
+.main-hero {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    padding: 100px 10% 50px;
+    gap: 60px;
+}
+
+.top-badge {
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--accent);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid var(--accent);
+}
+
+.hero-text h1 { font-size: 4.5rem; line-height: 1; margin: 20px 0; font-weight: 800; }
+.hero-text h1 span { color: var(--accent); }
+
+.hero-text p { color: var(--text-dim); font-size: 1.2rem; max-width: 550px; margin-bottom: 35px; }
+
+/* Botón de Descarga Principal */
+.btn-download-big {
+    display: inline-flex;
+    align-items: center;
+    background: var(--text);
+    color: var(--bg);
+    padding: 18px 35px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    gap: 20px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-download-big:hover { transform: scale(1.05); background: var(--accent); }
+
+.icon-dl { font-size: 2rem; }
+.btn-text span { display: block; font-size: 1.1rem; }
+.btn-text small { font-size: 0.7rem; opacity: 0.7; }
+
+.play-store-soon img { height: 45px; margin-top: 25px; opacity: 0.5; filter: grayscale(1); }
+
+/* Visuales */
+.hero-visual { position: relative; flex: 1; display: flex; justify-content: center; }
+.ui-card {
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+}
+.card-1 { width: 280px; transform: rotate(-5deg); z-index: 2; border-top: 4px solid var(--accent); }
+.card-2 { width: 240px; position: absolute; bottom: -20px; right: 10%; transform: rotate(10deg); z-index: 1; opacity: 0.6; }
+
+/* Grid de Características */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 100px 10%; }
+.f-card { background: #0a0a0a; padding: 40px; border-radius: 30px; border: 1px solid #1a1a1a; transition: 0.3s; }
+.f-card:hover { border-color: var(--accent); background: #111; }
+.f-icon { font-size: 2.5rem; margin-bottom: 20px; }
+
+/* Footer */
+.minimal-footer { padding: 50px 10%; border-top: 1px solid #1a1a1a; text-align: center; color: var(--text-dim); }
+.footer-links { margin-top: 15px; }
+.footer-links a { color: var(--text-dim); margin: 0 15px; text-decoration: none; font-size: 0.9rem; }
+
+@media (max-width: 900px) {
+    .main-hero { flex-direction: column; text-align: center; }
+    .hero-text h1 { font-size: 3rem; }
+    .hero-visual { margin-top: 50px; }
+}
+    </style>
+    <script src="script.js">
+      // Efecto Parallax para los elementos visuales
+document.addEventListener('mousemove', (e) => {
+    const cards = document.querySelectorAll('.ui-card');
+    const x = (window.innerWidth - e.pageX * 2) / 100;
+    const y = (window.innerHeight - e.pageY * 2) / 100;
+
+    cards.forEach((card, index) => {
+        const factor = (index + 1) * 1.5;
+        card.style.transform = `translateX(${x * factor}px) translateY(${y * factor}px) rotate(${index === 0 ? -5 : 10}deg)`;
+    });
+});
+
+// Animación de aparición suave al cargar
+window.addEventListener('DOMContentLoaded', () => {
+    const heroElements = document.querySelectorAll('.reveal, .reveal-slow, .ui-card');
+    heroElements.forEach((el, i) => {
+        setTimeout(() => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+        }, i * 200);
+    });
+});
+
+// Log de descarga para analítica básica (simulada)
+document.querySelector('.btn-download-big').addEventListener('click', () => {
+    console.log("Descarga iniciada desde Mediafire: cook.ven APK");
+});
+    </script>
+</body>
+</html>
