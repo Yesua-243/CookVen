@@ -70,6 +70,24 @@
         </div>
     </section>
 
+    <section class="sponsors-section">
+    <p class="sponsors-title">IMPULSADO POR TECNOLOGÍA DE CLASE MUNDIAL</p>
+    <div class="sponsors-grid">
+        <div class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        </div>
+        <div class="sponsor-logo">
+            <img src="https://raw.githubusercontent.com/formspree/brand-assets/master/formspree-logo-white.png" alt="Formspree" class="invert-img">
+        </div>
+        <div class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft">
+        </div>
+        <div class="sponsor-logo">
+            <img src="https://www.mediafire.com/g/p7v1s3z6s2j4g1b/6/mf_logo.png" alt="Mediafire" class="invert-img">
+        </div>
+    </div>
+    </section>
+    
     <section class="contact-section" id="contacto">
         <div class="contact-container">
             <div class="contact-info">
@@ -267,6 +285,57 @@ body {
     .hero-visual { margin-top: 50px; }
 }
 
+/* --- SECCIÓN DE PATROCINADORES --- */
+.sponsors-section {
+    padding: 60px 10% 20px;
+    text-align: center;
+    background-color: var(--bg);
+}
+
+.sponsors-title {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--text-dim);
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.sponsors-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    opacity: 0.7;
+}
+
+.sponsor-logo img {
+    height: 35px; /* Tamaño uniforme */
+    width: auto;
+    filter: grayscale(1) brightness(0.8); /* Logos en gris para no distraer */
+    transition: all 0.4s ease;
+}
+
+/* Invertir logos que son originalmente oscuros para que se vean en fondo negro */
+.invert-img {
+    filter: grayscale(1) brightness(2) !important;
+}
+
+.sponsor-logo img:hover {
+    filter: grayscale(0) brightness(1); /* Color original al pasar el mouse */
+    transform: scale(1.1);
+}
+
+/* Ajuste móvil */
+@media (max-width: 768px) {
+    .sponsors-grid {
+        gap: 30px;
+    }
+    .sponsor-logo img {
+        height: 25px;
+    }
+    }
+        
 /* --- ESTILO FORMULARIO DE CONTACTO PROFESIONAL --- */
 .contact-section {
     padding: 80px 10%;
@@ -405,6 +474,31 @@ document.querySelector('.btn-download-big').addEventListener('click', () => {
     console.log("Descarga iniciada desde Mediafire: cook.ven APK");
 });
 
+// Animación para los patrocinadores
+const revealSponsors = () => {
+    const sponsors = document.querySelector('.sponsors-grid');
+    if (sponsors) {
+        const windowHeight = window.innerHeight;
+        const elementTop = sponsors.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+            sponsors.style.opacity = "1";
+            sponsors.style.transform = "translateY(0)";
+        }
+    }
+};
+
+// Ajuste inicial para la animación
+document.addEventListener('DOMContentLoaded', () => {
+    const sponsors = document.querySelector('.sponsors-grid');
+    if (sponsors) {
+        sponsors.style.opacity = "0";
+        sponsors.style.transform = "translateY(20px)";
+        sponsors.style.transition = "all 1s ease-out";
+    }
+});
+
+window.addEventListener("scroll", revealSponsors);
+        
 // --- LÓGICA DEL FORMULARIO DE CONTACTO ---
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('.contact-form');
