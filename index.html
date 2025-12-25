@@ -9,17 +9,16 @@
 </head>
 <body>
 
-    <nav class="glass-nav">
-        <div class="logo">
-            <div class="icon-box">cv</div>
-            <span>cook<span>.ven</span></span>
-        </div>
-        <div class="nav-right">
-            <span class="company-tag">PerfectVerso 7</span>
-            <a href="https://www.mediafire.com/file/xmzx0c123mcnzkc/app3041465-npj5m6+(1).apk/file" target="_blank" class="btn-nav">Descargar APK</a>
-        </div>
-    </nav>
-
+   <nav class="glass-nav">
+    <div class="logo">
+        <img src="https://i.postimg.cc/Zq2kz1d3/3041465-ico.png" alt="cook.ven Logo" class="brand-logo-img">
+        <span>cook<span>.ven</span></span>
+    </div>
+    <div class="nav-right">
+        <span class="company-tag">PerfectVerso Studio</span>
+    </div>
+   </nav>
+    
     <header class="main-hero">
         <div class="hero-text">
             <span class="top-badge">Propiedad de PerfectVerso</span>
@@ -106,6 +105,47 @@
         </div>
     </footer>
     <style>
+
+      /* --- ESTILO PARA EL NUEVO LOGO --- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espacio entre la imagen y el texto */
+}
+
+.brand-logo-img {
+    height: 40px; /* Tamaño ideal para la navbar */
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0, 242, 255, 0.3)); /* Sutil brillo neón */
+    transition: transform 0.3s ease;
+}
+
+.brand-logo-img:hover {
+    transform: rotate(-5deg) scale(1.1); /* Animación juguetona al pasar el mouse */
+}
+
+.logo span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text);
+}
+
+.logo span span {
+    color: var(--accent); /* El ".ven" en color cyan */
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 480px) {
+    .brand-logo-img {
+        height: 32px;
+    }
+    .logo span {
+        font-size: 1.1rem;
+    }
+}
+        
       :root {
     --bg: #050505;
     --accent: #00f2ff;
