@@ -16,4 +16,4 @@ CookVen ofrece una solución integral para los amantes de la cocina, permitiendo
 Este proyecto es de carácter educativo y personal. No recopila datos sensibles sin consentimiento y utiliza servicios de terceros confiables para la gestión de mensajes y alojamiento.
 
 ---
-Desarrollado con disciplina por **PerfectVerso 7**.
+Desarrollado por **PerfectVerso 7**.
